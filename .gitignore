@@ -1,0 +1,9 @@
+ResourceHacker.ini
+
+/Steam/package/
+
+/test/
+/temp/
+
+/*.exe
+/*.7z

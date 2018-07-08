@@ -1,0 +1,13 @@
+﻿;!@Install@!UTF-8!
+Title="Steam 部署"
+BeginPrompt="一款快速完成 Steam 部署的工具。\n\n● 联接 Games.ini 里已存在的游戏到 Steam 库中\n● 添加了一款 Steam 皮肤：Metro for Steam"
+ExtractPathText="安装目录(请不要包含英文以外的字符)："
+ExtractTitle="Steam 部署的工具 解压中..."
+ExtractDialogText="请稍候..."
+CancelPrompt="确定要取消部署吗？"
+GUIFlags="8+32+64+256+4096"
+GUIMode="1"
+InstallPath="%ProgramFiles%\\"
+OverwriteMode="2"
+RunProgram="nowait:\"Steam.vbs\""
+;!@InstallEnd@!
