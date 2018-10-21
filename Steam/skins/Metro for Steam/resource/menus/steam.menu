@@ -4,19 +4,13 @@
 	{
 		text=""
 		text = [$OSX]	"#SteamRootAccount"
-		SkinVersion			{	text="Metro For Steam - 4.2.4"		shellcmd="" }
+		SkinVersion			{	text="Metro For Steam - 4.3.1"		shellcmd="" }
 		Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
 		Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
-		Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }
 		Divider {}
+		NewForYou						{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		CheckForUpdates	{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
-		// one of these will be invisible
-		UpdateVideoDrivers	[$WINDOWS]	{	text="#steam_menu_updatevendorgraphicscard"		command="CheckForVideoDriverUpdates" }
-		CheckForVideoDriverUpdates	[$WINDOWS]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
 		Divider {}
-		ChangeUser		{	text="#steam_menu_changeuser"				command="ChangeUser" }
-		MyAccount		{	text="#steam_menu_account_details" shellcmd="steam://url/StoreAccount/" }
-		MyProfile		{	text="#steam_menu_account_view_profile" shellcmd="steam://url/SteamIDMyProfile" }
 		GoOnline		{	text="#SteamUI_OfflineMode_GoOnline"		command="goonline" }
 		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
 		Divider {}
@@ -33,6 +27,7 @@
 		Servers							{	text="#steam_menu_servers"				shellcmd="steam://open/servers" }
 		Screenshots						{	text="#steam_screenshots"				command="Screenshots" }
 		Downloads						{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
+		Inventory						{	text="#steam_inventory"					shellcmd="steam://open/inventory" }
 		Divider {}
 		ActivateRetail		{ text="#Steam_RegisterProductCode"				command="ActivateRetail" }
 		RedeemWalletVoucher				{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
@@ -55,7 +50,6 @@
 		text = [!$OSX]	"#steam_menu_file"
 		text = [$OSX]	"#SteamRootAccount"
 
-		ChangeUser						{	text="#steam_menu_changeuser"			command="ChangeUser" }
 		GoOnline						{	text="#SteamUI_OfflineMode_GoOnline"	command="goonline" }
 		GoOffline						{	text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
 
@@ -63,10 +57,6 @@
 
 	    // check for updates appears in the system-managed "steam" menu on the mac
 		CheckForUpdates		[!$OSX]		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
-
-		// one of these will be invisible
-		UpdateVideoDrivers	[$WINDOWS||$LINUX]	{	text="#steam_menu_updatevendorgraphicscard"		command="UpdateVideoDrivers" }
-		Divider				[$WINDOWS||$LINUX]	{}
 
 		CheckForVideoDriverUpdates	[$WINDOWS||$LINUX]	{	text="#steam_menu_checkforvideodriverupdates"	command="CheckForVideoDriverUpdates" }
 		Divider				[$WINDOWS||$LINUX]	{}
@@ -121,6 +111,7 @@
 		Trade							{	text="#friends_lookingtotrade"			shellcmd="steam://friends/status/trade"			checkable=1		autocheck=0 }
 		Busy							{	text="#friends_busy"					shellcmd="steam://friends/status/busy"			checkable=1		autocheck=0 }
 		Offline							{	text="#friends_offline"					shellcmd="steam://friends/status/offline"		checkable=1		autocheck=0 }
+		Invisible						{	text="#friends_invisible"				shellcmd="steam://friends/status/invisible"		checkable=1		autocheck=0 }
 		Divider							{}
 		SortByName						{	text="#steam_menu_friends_sortbyname"	shellcmd="steam://friends/settings/sortbyname"	checkable=1 }
 		ShowAvatars						{	text="#steam_menu_friends_showavatars"	shellcmd="steam://friends/settings/showavatars"	checkable=1 }
@@ -165,9 +156,8 @@
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About							{	text="#steam_about"						command="About" }
 		Divider							{}
-		SkinVersion			{	text="Metro For Steam - 4.2.4"		shellcmd="" }
+		SkinVersion			{	text="Metro For Steam - 4.3.1"		shellcmd="" }
 		Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
 		Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
-		Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }
 	}
 }
